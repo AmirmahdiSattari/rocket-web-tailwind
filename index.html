@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <!-- <div id="app"></div> -->
+  <header class="bg-teal-700 text-white sticky top-0 z-10">
+    <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-medium">
+        <a href="#hero">🚀 THE JOAMS ROCKETS </a>
+      </h1>
+      <div>
+        <button id="hamburger-button" class="text-3xl
+         md:hidden">
+          &#9776;
+        </button>
+        <nav class="hidden md:block space-x-8
+        text-xl" aria-label="main">
+
+          <a href="#rockets" class="hover:opacity-90">
+            Our Rockets
+          </a>
+          <a href="#testimonials" class="hover:opacity-90">
+            Testimonials
+          </a>
+          <a href="#contacts" class="hover:opacity-90">
+            Contact Us
+          </a>
+        </nav>
+      </div>
+    </section>
+    <section id="mobile-menu"
+     class="absolute top-0 bg-black
+      w-full text-5xl flex-col 
+      justify-content-center
+      origin-top animate-open-menu
+      hidden">
+      <button class="text-8xl self-end px-6">
+        &times;
+      </button>
+      <nav class="flex flex-col min-h-screen
+       items-center py-8" aria-label="mobile">
+        <a href="#hero" class="w-full text-center 
+        py-6 hover:opacity-90">
+          Home
+        </a>
+        <a href="#rockets" class="w-full text-center 
+        py-6 hover:opacity-90">
+          Home
+        </a>
+        <a href="#tetimonials" class="w-full text-center 
+        py-6 hover:opacity-90">
+          Testimonials
+        </a>
+        <a href="#contacts" class="w-full text-center 
+        py-6 hover:opacity-90">
+          Contact Us
+        </a>
+        <a href="#footer" class="w-full text-center 
+        py-6 hover:opacity-90">
+          Legal
+        </a>
+      </nav>
+    </section>
+  </header>
+  <main class="max-w-4xl mx-auto">
+    <section id="hero" class="flex
+     flex-col-reverse scroll-mt-40
+     justify-center sm:flex-row p-6
+      items-center gap-8 mb-12
+      wildscreen:section-min-height
+      tallscreen:section-min-heihgt">
+
+      <article class="sm:w-1/2">
+        <h2 class="max-w-md text-3xl font-bold text-center
+         sm:text-2xl sm:text-left text-slate-900
+         dark:text-white">
+          we boldy go <span class="text-indigo-700
+          dark:text-indigo-300">
+            WHERE NO ROCKETS
+          </span>
+          has gone before...
+        </h2>
+        <p class="max-w-md text-xl mt-4
+         text-center sm:text-left
+         text-slate-700 dark:text-slate-400">
+          we are building rockets for the next century tody.
+          from moon to Mars, Jupiter and beyond...
+        </p>
+        <p class="max-w-md text-sm mt-4
+        text-center sm:text-left
+        text-slate-700 dark:text-slate-400">
+          Think THE JOAMS Rockets.
+        </p>
+      </article>
+      <img src="./assets/imgs/rocketdab.png" alt="Rocket dab" class="w-1/2">
+    </section>
+    <hr class="mx-auto bg-black dark:bg:white w-1/2 opacity-75">
+
+    <section id="rockets" class="p-6 my-12
+    scroll-mt-20">
+      <h2 class="text-4xl font-bold 
+      text-center sm:text-5xl mb-6
+       text-slate-900 dark:text-white
+       wildscreen:section-min-height
+       tallscreen:section-min-heihgt">
+        Our Rockets
+      </h2>
+      <ul class="list-none mx-auto 
+      my-12 flex flex-col
+      sm:flex-row items-center gap-8">
+        <li class="w-2/3 sm:w-5/6 flex flex-col items-center border
+      border-solid border-slate-900 dark:border-gray-100 
+      bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./assets/imgs/rocketman.png" class="w-1/2 mb-6" alt="rocket man">
+          <h3 class="text-3xl text-center text-slate-900
+           dark:text-white">Explorer</h3>
+          <p class="hidden sm:block text-3xl 
+           text-center mt-2
+           text-slate-500
+           dark:text-slate-400">$</p>
+          <p class="sm:hidden text-2xl 
+           text-center mt-2 text-slate-500
+           dark:text-slate-400">Affordable Exploration</p>
+        </li>
+        <li class="w-2/3 sm:w-5/6 flex flex-col items-center border
+          border-solid border-slate-900 dark:border-gray-100 
+          bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./assets/imgs/rocketride.png" class="w-1/2 mb-6" alt="rocket ride Adventure">
+          <h3 class="text-3xl text-center text-slate-900
+               dark:text-white">Adventure</h3>
+          <p class="hidden sm:block text-3xl 
+               text-center mt-2
+               text-slate-500
+               dark:text-slate-400">$$</p>
+          <p class="sm:hidden text-2xl 
+               text-center mt-2 text-slate-500
+               dark:text-slate-400">Best selling Rocket!</p>
+        </li>
+        <li class="w-2/3 sm:w-5/6 flex flex-col items-center border
+            border-solid border-slate-900 dark:border-gray-100 
+            bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+          <img src="./assets/imgs/rocketlaunch.png" class="w-1/2 mb-6" alt="rocket launch">
+          <h3 class="text-3xl text-center text-slate-900
+                 dark:text-white">Infinity</h3>
+          <p class="hidden sm:block text-3xl 
+                 text-center mt-2
+                 text-slate-500
+                 dark:text-slate-400">$$$</p>
+          <p class="sm:hidden text-2xl 
+                 text-center mt-2 text-slate-500
+                 dark:text-slate-400">Luxury Starship</p>
+        </li>
+      </ul>
+    </section>
+    <hr class="mx-auto bg-black dark:bg:white w-1/2 opacity-75">
+
+    <section id="testimonials" class="p-6 my-12 scroll-mt-20">
+      <h2 class="text-4xl font-bold 
+      text-center sm:text-5xl mb-6
+       text-slate-900 dark:text-white
+       wildscreen:section-min-height
+       tallscreen:section-min-heihgt">
+        Testimonials
+      </h2>
+      <figure class="my-12">
+        <blockquote class="bg-teal-600 dark:bg-black
+         pl-14 pr-8 py-12 rounded-3xl relative">
+          <p class="text-2xl sm:text-3xl
+           text-left mt-2 text-white
+           dark:text-slate-400 
+           before:content-['\201C']
+           before:absolute
+           before:top-0 before:left-0
+           before:text-9xl 
+           before:text-white
+           before:opacity-25
+           before:transform
+           before:translate-x-2 before:translate-y-2
+           after:content-['\201D']
+           after:font-serif
+           after:absolute
+           after:-bottom-20 after:right-0
+           after:text-9xl
+           after:text-white
+           after:opacity-25
+           after:transform
+           after:-translate-x-2 after:-translate-y-2
+           before:font-serif
+          ">
+            Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Veritatis dignissimos
+            id ipsa repellat porro tempora, provident
+            amet dolor quo perspiciatis nisi quod quis sunt,
+            ullam rem sint nobis molestias🏆
+          </p>
+        </blockquote>
+        <figcaption class="italic text-xl 
+        sm:text-2xl text-right mt-4
+         text-slate-500 dark:text-slate-400">
+          &#8212;Elon Musk
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="bg-teal-600 dark:bg-black
+         pl-14 pr-8 py-12 rounded-3xl relative">
+          <p class="text-2xl sm:text-3xl
+           text-left mt-2 text-white
+           dark:text-slate-400 
+           before:content-['\201C']
+           before:absolute
+           before:top-0 before:left-0
+           before:text-9xl 
+           before:text-white
+           before:opacity-25
+           before:transform
+           before:translate-x-2 before:translate-y-2
+           after:content-['\201D']
+           after:font-serif
+           after:absolute
+           after:-bottom-20 after:right-0
+           after:text-9xl
+           after:text-white
+           after:opacity-25
+           after:transform
+           after:-translate-x-2 after:-translate-y-2
+           before:font-serif
+          ">
+            Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Veritatis dignissimos
+            id ipsa repellat porro tempora, provident
+            amet dolor quo perspiciatis nisi quod quis sunt,
+            ullam rem sint nobis molestias💯
+          </p>
+        </blockquote>
+        <figcaption class="italic text-xl 
+        sm:text-2xl text-right mt-4
+         text-slate-500 dark:text-slate-400">
+          &#8212;Akbar Abdi
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="bg-teal-600 dark:bg-black
+         pl-14 pr-8 py-12 rounded-3xl relative">
+          <p class="text-2xl sm:text-3xl
+           text-left mt-2 text-white
+           dark:text-slate-400 
+           before:content-['\201C']
+           before:absolute
+           before:top-0 before:left-0
+           before:text-9xl 
+           before:text-white
+           before:opacity-25
+           before:transform
+           before:translate-x-2 before:translate-y-2
+           after:content-['\201D']
+           after:font-serif
+           after:absolute
+           after:-bottom-20 after:right-0
+           after:text-9xl
+           after:text-white
+           after:opacity-25
+           after:transform
+           after:-translate-x-2 after:-translate-y-2
+           before:font-serif
+          ">
+            Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Veritatis dignissimos
+            id ipsa repellat porro tempora, provident
+            amet dolor quo perspiciatis nisi quod quis sunt,
+            ullam rem sint nobis molestias👌
+          </p>
+        </blockquote>
+        <figcaption class="italic text-xl 
+        sm:text-2xl text-right mt-4
+         text-slate-500 dark:text-slate-400">
+          &#8212;Bill Gates
+        </figcaption>
+      </figure>
+
+    </section>
+    <hr class="mx-auto bg-black dark:bg:white w-1/2 opacity-75">
+
+    <section id="contacts" class="p-6 my-12 scroll-mt-20">
+      <h2 class="text-4xl font-bold 
+      text-center sm:text-5xl mb-6
+       text-slate-900 dark:text-white
+       wildscreen:section-min-height
+       tallscreen:section-min-heihgt">
+        Contacts Us
+      </h2>
+      <form action="" class="
+      max-w-4xl mx-auto text-2xl  sm:text-3xl
+      flex flex-col items-left gap-4">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
+          class="w-full text-black text-2xl sm:text-3xl p-3
+      rounded-xl border border-solid border-slate-900
+      dark:border-none" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl 
+      p-3 rounded-xl border border-solid border-slate-900
+      dark:border-none"></textarea>
+        <button class="bg-teal-700 hover:bg-teal-600
+        active:bg-teal-900 text-white 
+        p-3 w-48 rounded-xl border border-solid
+        border-slate-900
+        dark:border-none">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer id="id" class="bg-teal-700 text-white text-xl">
+    <section class="max-w-4xl mx-auto p-4 flex
+    flex-col sm:flex-row sm:justify-between">
+      <address>
+        <h2>THE JOAMS Rockets-Powered Products, Inc.</h2>
+        444 Karaj way <br />
+        Alborz , Karaj Derakhti 026-44444<br>
+        Email : <a href="amirmahdisattariams@gmail.com">
+          amirmahdisattariams@gmail.com
+        </a><br>
+        Phone : <a href="tel: +98 026 444444">(026) 444-4444</a>
+      </address>
+      <nav class="hidden md:flex flex-col gap-2" arial-label="footer">
+        <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+        <a href="#contacts" class="hover:opacity-90">
+          Contact Us</a>
+      </nav>
+      <div class="flex flex-col sm:gap-2">
+        <p class="text-right">Copyright &copy;
+          <span id="year">2022</span>
+        </p>
+        <p class="text-right">All Rights Reserved</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+
+<script type="module" src="/main.js" defer></script>
+
+</html>
